@@ -1,3 +1,9 @@
+let playerA = prompt("Enter Name of Player 1..");
+let playerB = prompt("Enter Name of Player 2..");
+alert(`${playerA} has O and ${playerB} has X`);
+
+
+
 let boxes = document.querySelectorAll(".box");
 let resetBtn = document.querySelector("#reset-btn");
 let newGameBtn = document.querySelector("#new-btn");
@@ -28,11 +34,11 @@ const resetGame = () => {
 boxes.forEach((box) => {
   box.addEventListener("click", () => {
     if (turnO) {
-      //playerO
+      //playerA(has O)
       box.innerText = "O";
       turnO = false;
     } else {
-      //playerX
+      //playerB(has X)
       box.innerText = "X";
       turnO = true;
     }
@@ -67,8 +73,13 @@ const enableBoxes = () => {
 };
 
 const showWinner = (winner) => {
-  msg.innerText = `Congratulations, Winner is ${winner}`;
-  msgContainer.classList.remove("hide");
+  if(winner === "O"){
+    msg.innerText = `Congratulations, Winner is ${playerA}`;
+    msgContainer.classList.remove("hide");
+  }else{
+    msg.innerText = `Congratulations, Winner is ${playerB}`;
+    msgContainer.classList.remove("hide");
+  }
   disableBoxes();
 };
 
