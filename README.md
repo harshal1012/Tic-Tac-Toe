@@ -25,7 +25,7 @@ A simple and interactive Tic-Tac-Toe game built using HTML, CSS, and JavaScript.
 
 
 ## Demo
-Check out the live demo: [Demo Link](https:/harshal1012.github.io/Tic-Tac-Toe/)
+Check out the live demo: [Demo Link](https://harshal1012.github.io/Tic-Tac-Toe/)
 
 ## Game Rules
 - The game is played on a grid that's 3 squares by 3 squares.
