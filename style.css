@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #ac0e9a;
+  background-color: #04416a;
   text-align: center;
 }
 
@@ -33,8 +33,8 @@ body {
   border: none;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
   font-size: 8vmin;
-  color: #b0413e;
-  background-color: #ffffc7;
+  color: #ec30d6;
+  background-color: snow;
 }
 
 #reset-btn {
